@@ -273,14 +273,21 @@ Format: **action** / *why it matters*
 ## Step 10: Excellence benchmarks (end of session)
 
 At the end of each review session, assess whether any bullets from this CV are strong
-enough to serve as benchmark examples for the excellence criterion. Propose specific
-additions in this format:
+enough to serve as benchmark examples for the excellence criterion.
+
+**This file is published publicly, and benchmark bullets come from clients' CVs — so any
+proposed addition must be fully anonymised first: strip or replace employer, product,
+project, and personal names; round or alter figures traceable to a real person or
+organisation; keep only what teaches the pattern.** If a bullet cannot be anonymised
+without losing what makes it exceptional, do not propose it.
+
+Propose specific additions in this format:
 
 ```
 Proposed excellence benchmark addition:
 Level: [junior / mid / senior / executive]
 Sector: [sector if sector-specific, or "general"]
-Example: [the bullet text]
+Example: [the anonymised bullet text]
 Why it qualifies: [one sentence]
 Suggested addition to SKILL.md: [exact text to paste into the Excellence Benchmarks
 section below]
@@ -293,7 +300,7 @@ Present this to the user and wait for confirmation before treating it as adopted
 ## Excellence Benchmarks
 
 *This section grows over time. Each entry is a real example of a 5/5 excellence bullet,
-anchored to level and sector.*
+anonymised, anchored to level and sector.*
 
 *(No benchmarks yet — will populate after first review sessions.)*
 
