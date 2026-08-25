@@ -1,0 +1,8 @@
+{
+  "name": "cv-review",
+  "description": "Structured CV critique: nine weighted scoring criteria, a 30-second recruiter test, red-flag scanning with remedies, jurisdiction norms, and bullet-by-bullet verdicts with suggested rewrites.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Llewellyn-Jones"
+  }
+}
