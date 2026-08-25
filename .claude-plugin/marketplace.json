@@ -16,6 +16,17 @@
       },
       "category": "productivity",
       "keywords": ["cv", "resume", "career", "review", "feedback"]
+    },
+    {
+      "name": "framing-review",
+      "source": "./plugins/framing-review",
+      "description": "Structure, framing, and storyline review for slide decks and documents — pressure-tests whether an artefact actually argues its case to its audience, with action titles, a harsh coverage check, and create/review workflows for decks and documents.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matt Llewellyn-Jones"
+      },
+      "category": "productivity",
+      "keywords": ["presentations", "decks", "documents", "storyline", "pyramid-principle", "review"]
     }
   ]
 }
