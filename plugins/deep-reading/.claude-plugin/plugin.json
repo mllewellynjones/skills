@@ -1,0 +1,8 @@
+{
+  "name": "deep-reading",
+  "description": "A demanding post-reading debrief for non-fiction — free recall with the book closed, gap-finding, stress-tested connections, falsification, and a comparable three-dimension grade. Chapter-by-chapter for books with a whole-book synthesis, or single sessions for articles and papers.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Llewellyn-Jones"
+  }
+}
