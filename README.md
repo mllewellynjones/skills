@@ -2,14 +2,22 @@
 
 Claude skills for structured knowledge work, published as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces).
 
-## Install (Claude Code)
+## Install
+
+### In claude.ai (easiest — no tools needed)
+
+1. Download the zip for the skill you want from the **[latest release](https://github.com/mllewellynjones/skills/releases/latest)** — one zip per skill, rebuilt automatically whenever a skill changes.
+2. In claude.ai, go to **Settings → Capabilities → Skills** and upload the zip.
+3. That's it — Claude uses the skill automatically when a conversation matches it. To update later, download the new zip and upload again; it replaces the old version.
+
+### In Claude Code
 
 ```
 /plugin marketplace add mllewellynjones/skills
 /plugin install cv-review@mllewellynjones-skills
 ```
 
-Each skill also works standalone in claude.ai or Claude Desktop: zip the skill folder found under `plugins/<name>/skills/<name>/` and upload it via **Customize → Skills**.
+Installed plugins update automatically when their version is bumped.
 
 ## Skills
 
