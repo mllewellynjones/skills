@@ -1,0 +1,37 @@
+name: Build skill zips
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build one zip per skill
+        run: |
+          mkdir -p dist
+          for skill_dir in plugins/*/skills/*/; do
+            name=$(basename "$skill_dir")
+            parent=$(dirname "$skill_dir")
+            (cd "$parent" && zip -r "$GITHUB_WORKSPACE/dist/$name.zip" "$name")
+          done
+          ls -l dist
+
+      - name: Publish to rolling 'latest' release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest >/dev/null 2>&1 || \
+            gh release create latest \
+              --title "Skill zips (latest)" \
+              --notes "Auto-built zip of each skill, ready to upload to claude.ai (Settings → Capabilities → Skills). Rebuilt on every change to plugins/."
+          gh release upload latest dist/*.zip --clobber
