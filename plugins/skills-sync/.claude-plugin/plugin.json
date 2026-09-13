@@ -1,0 +1,8 @@
+{
+  "name": "skills-sync",
+  "description": "Maintenance skill for this repo: diffs locally installed skill copies against the published versions, runs the privacy pass, pushes approved changes with version bumps, and reports what still needs a manual claude.ai re-upload.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Llewellyn-Jones"
+  }
+}

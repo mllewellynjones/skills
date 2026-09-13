@@ -33,6 +33,10 @@ Structure, framing, and storyline review for slide decks and written documents �
 
 A post-reading debrief that turns non-fiction into active learning, with Claude as a demanding tutor. The reader produces first — free recall with the book closed, their own connections, their own attack on the argument — and Claude challenges second: finding gaps, stress-testing analogies, sharpening generic scepticism into specific counter-cases, and running a source-credibility check. Every session includes a mandatory challenge and a three-dimension grade (recall, depth, challenge) that stays comparable across chapters and books. Works chapter-by-chapter with a whole-book synthesis at the end, or as a single session for articles, papers, and reports — with honest calibration of how well Claude actually knows the specific text.
 
+### skills-sync
+
+The maintenance skill for this repo itself. Diffs locally installed skill copies against the published versions, classifies drift by direction (stale local upload vs unpushed local edit), runs a privacy pass before any push, bumps versions so installed users receive updates, and reports what still needs a manual claude.ai re-upload.
+
 ---
 
-*More skills coming soon.*
+*What's coming next: see the [roadmap](ROADMAP.md).*
