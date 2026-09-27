@@ -1,0 +1,8 @@
+{
+  "name": "project-setup",
+  "description": "Classify a new project as an Execution Project, Strategic Bet, or Decision Project, then run the matching minimal setup: outcome and a single next action for execution; user-drafted hypothesis, pre-mortem, validation moves and execution boundary for bets; decision statement and deadline for decisions, with hand-off to decision-deep-dive. Deliberately stops short of plans and task lists.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Llewellyn-Jones"
+  }
+}

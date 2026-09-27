@@ -1,9 +1,5 @@
 # Roadmap
 
-## Next up
-
-- **project-setup** (working name; currently project-intake) — classify a new project as Execution, Strategic Bet, or Decision, then run the matching setup workflow.
-
 ## Planned
 
 - **prepare-handover** — summarise the current conversation into a handover (in chat or as a markdown file) so a fresh conversation can pick up with full context; designed for approaching context-window limits.
