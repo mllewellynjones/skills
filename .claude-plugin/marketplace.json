@@ -40,6 +40,17 @@
       "keywords": ["reading", "learning", "books", "recall", "comprehension", "study"]
     },
     {
+      "name": "decision-deep-dive",
+      "source": "./plugins/decision-deep-dive",
+      "description": "A disciplined ten-step decision process for choices with real trade-offs — the user drafts first, then the process sharpens: decision statement, bounded option set, decision-specific criteria, honest assessment without scoring theatre, assumptions and unknowns, a forced commitment, second-order effects, revisit triggers, and a documented decision record.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matt Llewellyn-Jones"
+      },
+      "category": "productivity",
+      "keywords": ["decision-making", "decisions", "trade-offs", "chief-of-staff", "thinking"]
+    },
+    {
       "name": "skills-sync",
       "source": "./plugins/skills-sync",
       "description": "Maintenance skill for this repo: diffs locally installed skill copies against the published versions, runs the privacy pass, pushes approved changes with version bumps, and reports what still needs a manual claude.ai re-upload.",

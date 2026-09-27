@@ -33,6 +33,10 @@ Structure, framing, and storyline review for slide decks and written documents �
 
 A post-reading debrief that turns non-fiction into active learning, with Claude as a demanding tutor. The reader produces first — free recall with the book closed, their own connections, their own attack on the argument — and Claude challenges second: finding gaps, stress-testing analogies, sharpening generic scepticism into specific counter-cases, and running a source-credibility check. Every session includes a mandatory challenge and a three-dimension grade (recall, depth, challenge) that stays comparable across chapters and books. Works chapter-by-chapter with a whole-book synthesis at the end, or as a single session for articles, papers, and reports — with honest calibration of how well Claude actually knows the specific text.
 
+### decision-deep-dive
+
+A structured decision-making process for situations with real trade-offs, with Claude as a sceptical Chief of Staff. The user writes their own unfiltered first draft before anything else — the process sharpens and tests their thinking rather than generating it. Ten steps follow: a one-sentence decision statement, context and timing (including the cost of inaction), a bounded and then locked option set that always includes "do nothing", decision-specific evaluation criteria, honest pros / cons / risks / irreversibility assessment with no scoring matrices, assumptions and unknowns (with an offer to research the resolvable ones), a forced commitment with consciously accepted trade-offs, second-order effects, and explicit revisit / do-not-reopen triggers. Ends with a decision record for the user's notes system and, if a task manager is connected, a single next action.
+
 ### skills-sync
 
 The maintenance skill for this repo itself. Diffs locally installed skill copies against the published versions, classifies drift by direction (stale local upload vs unpushed local edit), runs a privacy pass before any push, bumps versions so installed users receive updates, and reports what still needs a manual claude.ai re-upload.

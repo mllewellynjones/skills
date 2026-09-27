@@ -1,0 +1,8 @@
+{
+  "name": "decision-deep-dive",
+  "description": "A disciplined ten-step decision process for choices with real trade-offs — the user drafts first, then the process sharpens: decision statement, bounded option set, decision-specific criteria, honest assessment without scoring theatre, assumptions and unknowns, a forced commitment, second-order effects, revisit triggers, and a documented decision record.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Llewellyn-Jones"
+  }
+}

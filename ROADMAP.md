@@ -2,7 +2,6 @@
 
 ## Next up
 
-- **decision-deep-dive** — a structured decision-making process for reaching a clear, committed decision on situations with real trade-offs, documenting it, and stopping.
 - **project-setup** (working name; currently project-intake) — classify a new project as Execution, Strategic Bet, or Decision, then run the matching setup workflow.
 
 ## Planned
