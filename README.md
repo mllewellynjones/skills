@@ -45,6 +45,10 @@ A Chief-of-Staff intake for anything that might become a project. Claude classif
 
 The maintenance skill for this repo itself. Diffs locally installed skill copies against the published versions, classifies drift by direction (stale local upload vs unpushed local edit), runs a privacy pass before any push, bumps versions so installed users receive updates, and reports what still needs a manual claude.ai re-upload.
 
+### handover
+
+A rolling handover of the current conversation, written for a fresh Claude conversation to pick up — a state document, not a summary. Sections run in priority order so a run squeezed by a context limit still leaves the most useful material: objective and definition of done, verify-first checks, exactly one next action, current state with evidence levels (verified / claimed / assumed), outstanding decisions and actions, decisions made with provenance tags and the options discounted (so a successor doesn't re-propose them), operating rules set mid-conversation, exact locators, tool quirks, coined vocabulary, and open questions. Outputs to chat or to a dated markdown file that is updated in place at each milestone; a prune-and-restart split keeps any one file small, and a successor only ever reads one. Includes the resume side: read the live file, run the verify-first checks, confirm in four lines, honour what has been decided, and adopt the file as the new conversation's rolling handover.
+
 ---
 
 *What's coming next: see the [roadmap](ROADMAP.md).*

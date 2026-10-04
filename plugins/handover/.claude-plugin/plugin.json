@@ -1,0 +1,8 @@
+{
+  "name": "handover",
+  "description": "Write or update a rolling handover of the current conversation so a fresh conversation can pick it up — objective, verify-first checks, one next action, state with evidence levels, outstanding and made decisions with the options discounted, operating rules, exact locators — and resume from one. Output to chat or a dated markdown file; a prune-and-restart split keeps any one file small.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matt Llewellyn-Jones"
+  }
+}
