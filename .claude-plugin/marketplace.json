@@ -82,6 +82,17 @@
       },
       "category": "productivity",
       "keywords": ["handover", "context", "continuity", "resume", "session", "memory"]
+    },
+    {
+      "name": "frame-hypothesis",
+      "source": "./plugins/frame-hypothesis",
+      "description": "Hypothesis-driven problem framing — tightens the problem statement, stress-tests a lead hypothesis against generated rivals, decomposes it into a MECE hypothesis tree with analyses and kill signals, prioritises branches by impact, tractability and prior certainty, and outputs a ghost-deck storyline ready for framing-review.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matt Llewellyn-Jones"
+      },
+      "category": "productivity",
+      "keywords": ["hypothesis", "problem-solving", "issue-tree", "mece", "consulting", "framing"]
     }
   ]
 }
