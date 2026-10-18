@@ -1,23 +1,35 @@
 # skills
 
-Claude skills for structured knowledge work, published as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces).
+Claude skills for structured knowledge work, published as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces). Each plugin contains one skill.
 
 ## Install
 
-### In claude.ai (easiest — no tools needed)
+There are two ways in. The marketplace route is the one to use if your plan allows it: add the repo once and every skill is a click away, with updates handled for you. The zip route works everywhere, including on the Free plan, at the cost of re-uploading when a skill changes.
 
-1. Download the zip for the skill you want from the **[latest release](https://github.com/mllewellynjones/skills/releases/latest)** — one zip per skill, rebuilt automatically whenever a skill changes.
-2. In claude.ai, go to **Settings → Capabilities → Skills** and upload the zip.
-3. That's it — Claude uses the skill automatically when a conversation matches it. To update later, download the new zip and upload again; it replaces the old version.
+### As a marketplace — claude.ai, Claude Desktop, Cowork and Claude Code
 
-### In Claude Code
+Plugins need a paid plan (Pro, Max, Team or Enterprise) and **Code execution and file creation** switched on.
+
+1. In claude.ai, open **Customize → Plugins**, click **Add → Add marketplace → Add from a repository**, and enter `mllewellynjones/skills`.
+2. Open the **Discover** tab and click **Add** on the skills you want.
+3. That's it — Claude uses a skill automatically when a conversation matches it. Plugins you add here are saved to your account, so they also work in Claude Desktop, Cowork and (when signed in with the same account) Claude Code.
+
+To pick up new versions, open the marketplace's menu under Customize → Plugins and choose **Check for updates**.
+
+If you only use Claude Code, you can add the marketplace there instead:
 
 ```
 /plugin marketplace add mllewellynjones/skills
 /plugin install cv-review@mllewellynjones-skills
 ```
 
-Installed plugins update automatically when their version is bumped.
+Installed plugins update when their version is bumped.
+
+### As a zip upload — any plan, no marketplace
+
+1. Download the zip for the skill you want from the **[latest release](https://github.com/mllewellynjones/skills/releases/latest)** — one zip per skill, rebuilt automatically whenever a skill changes.
+2. In claude.ai, open **Customize → Skills**, click **+** then **Create skill → Upload a skill**, and choose the zip.
+3. Claude uses the skill automatically when a conversation matches it. To update later, download the new zip and upload it again; it replaces the old version.
 
 ## Skills
 
@@ -28,6 +40,10 @@ A structured methodology for critiquing CVs. Runs an intake (target role, market
 ### framing-review
 
 Structure, framing, and storyline review for slide decks and written documents — judging the *argument*, not the wording or visuals. Four workflows (create or review × deck or document) share one process: fix the framing first (audience, priors, governing message, the ask), map the as-is storyline, have the author set the should-be spine, test it against objections, then score a harsh coverage check (alternatives, external benchmark, cost, risk, dependency floor vs ceiling). Includes action-title guidance for decks, message-first prose guidance for documents, and rebuildable framing templates and feedback packs.
+
+### frame-hypothesis
+
+Hypothesis-driven problem framing for the first days of a project or case — the upstream half of the loop that framing-review closes. The user sets the answer and Claude tests it, challenging until told to stop. Five stages: tighten the problem statement against seven elements (decision-maker, decision, success measure, scope, constraints, timeframe, one-sentence form) and three traps; form a lead hypothesis and defend it against rivals Claude generates on purpose; decompose it into a MECE hypothesis tree of what would have to be true, with the analyses that prove or kill each branch; prioritise the branches by impact, tractability and prior certainty; and hand off a ghost-deck storyline in framing-review's `Slide | Key message | Detail` format. Stops deliberately short of work packets.
 
 ### deep-reading
 
@@ -40,10 +56,6 @@ A structured decision-making process for situations with real trade-offs, with C
 ### project-setup
 
 A Chief-of-Staff intake for anything that might become a project. Claude classifies it as an Execution Project (the outcome is delivery), a Strategic Bet (learning or validation), or a Decision Project (commitment to a course of action), explains why in one sentence, and waits for confirmation. Each type then gets a deliberately minimal setup. Execution projects get a primary outcome and exactly one next action — no plan. Strategic Bets start with the user's own unfiltered draft, then a hypothesis (If we… / Then we expect… / Because…), success signals, a short pre-mortem, assumptions, three to five validation moves, and an execution boundary defining what AI may generate. Decision Projects get a decision statement, deadline, and first draft, with execution blocked until the decision is made — handing off to decision-deep-dive if the user wants to decide now. Closes with a project summary for the user's notes system and an explicit statement of what is *not* being done yet.
-
-### skills-sync
-
-The maintenance skill for this repo itself, usable from a claude.ai chat or from Claude Code. Diffs locally installed skill copies (claude.ai uploads, or Claude Code's read-only mirror of them) against the published versions, classifies drift by direction (stale local upload vs unpushed local edit), runs a privacy pass before any push, bumps versions so installed users receive updates, and reports what still needs a manual claude.ai re-upload. Also sets out where drafts live in Claude Code: published skills are edited in a clone of the repo, trial copies go in the personal skills folder, and private skills are zipped and uploaded directly.
 
 ### handover
 

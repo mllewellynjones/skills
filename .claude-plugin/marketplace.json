@@ -15,7 +15,13 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["cv", "resume", "career", "review", "feedback"]
+      "keywords": [
+        "cv",
+        "resume",
+        "career",
+        "review",
+        "feedback"
+      ]
     },
     {
       "name": "framing-review",
@@ -26,7 +32,14 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["presentations", "decks", "documents", "storyline", "pyramid-principle", "review"]
+      "keywords": [
+        "presentations",
+        "decks",
+        "documents",
+        "storyline",
+        "pyramid-principle",
+        "review"
+      ]
     },
     {
       "name": "deep-reading",
@@ -37,7 +50,14 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["reading", "learning", "books", "recall", "comprehension", "study"]
+      "keywords": [
+        "reading",
+        "learning",
+        "books",
+        "recall",
+        "comprehension",
+        "study"
+      ]
     },
     {
       "name": "decision-deep-dive",
@@ -48,7 +68,13 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["decision-making", "decisions", "trade-offs", "chief-of-staff", "thinking"]
+      "keywords": [
+        "decision-making",
+        "decisions",
+        "trade-offs",
+        "chief-of-staff",
+        "thinking"
+      ]
     },
     {
       "name": "project-setup",
@@ -59,18 +85,13 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["projects", "project-setup", "planning", "strategy", "chief-of-staff"]
-    },
-    {
-      "name": "skills-sync",
-      "source": "./plugins/skills-sync",
-      "description": "Maintenance skill for this repo: diffs locally installed skill copies against the published versions, runs the privacy pass, pushes approved changes with version bumps, and reports what still needs a manual claude.ai re-upload.",
-      "version": "1.1.0",
-      "author": {
-        "name": "Matt Llewellyn-Jones"
-      },
-      "category": "productivity",
-      "keywords": ["maintenance", "sync", "skills", "github", "marketplace"]
+      "keywords": [
+        "projects",
+        "project-setup",
+        "planning",
+        "strategy",
+        "chief-of-staff"
+      ]
     },
     {
       "name": "handover",
@@ -81,7 +102,14 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["handover", "context", "continuity", "resume", "session", "memory"]
+      "keywords": [
+        "handover",
+        "context",
+        "continuity",
+        "resume",
+        "session",
+        "memory"
+      ]
     },
     {
       "name": "frame-hypothesis",
@@ -92,7 +120,14 @@
         "name": "Matt Llewellyn-Jones"
       },
       "category": "productivity",
-      "keywords": ["hypothesis", "problem-solving", "issue-tree", "mece", "consulting", "framing"]
+      "keywords": [
+        "hypothesis",
+        "problem-solving",
+        "issue-tree",
+        "mece",
+        "consulting",
+        "framing"
+      ]
     }
   ]
 }
