@@ -43,7 +43,7 @@ A Chief-of-Staff intake for anything that might become a project. Claude classif
 
 ### skills-sync
 
-The maintenance skill for this repo itself. Diffs locally installed skill copies against the published versions, classifies drift by direction (stale local upload vs unpushed local edit), runs a privacy pass before any push, bumps versions so installed users receive updates, and reports what still needs a manual claude.ai re-upload.
+The maintenance skill for this repo itself, usable from a claude.ai chat or from Claude Code. Diffs locally installed skill copies (claude.ai uploads, or Claude Code's read-only mirror of them) against the published versions, classifies drift by direction (stale local upload vs unpushed local edit), runs a privacy pass before any push, bumps versions so installed users receive updates, and reports what still needs a manual claude.ai re-upload. Also sets out where drafts live in Claude Code: published skills are edited in a clone of the repo, trial copies go in the personal skills folder, and private skills are zipped and uploaded directly.
 
 ### handover
 

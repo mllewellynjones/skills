@@ -18,8 +18,10 @@ The GitHub repo is the source of truth for published skills; locally installed c
 
 ## Sync procedure
 
-1. **Read local copies.** In a chat environment, installed skills live under `/mnt/skills/user/` and `/mnt/skills/plugins/`.
-2. **Fetch published copies** of each skill listed in `marketplace.json` via the GitHub connector.
+1. **Read local copies.** Where they live depends on the environment:
+   - Chat environment: `/mnt/skills/user/` and `/mnt/skills/plugins/`.
+   - Claude Code: the claude.ai account's skills are mirrored to `~/.claude/skills/synced/<account-id>/<name>/`, with a `manifest.json` alongside listing them. The mirror is read-only — the sync overwrites it — so never edit there.
+2. **Fetch published copies** of each skill listed in `marketplace.json` — via the GitHub connector in a chat environment; in Claude Code, clone or pull the repo and read the files directly.
 3. **Diff and classify** each difference by direction:
    - **Repo ahead** (the published copy was edited or sanitised after upload): the user's claude.ai copy is stale — point them at the skill's zip in the latest release to re-upload. Do not "fix" the repo back to the local wording: published sanitisations are deliberate.
    - **Local ahead** (the user edited their installed copy): propose a push, showing the delta first.
@@ -31,7 +33,12 @@ The GitHub repo is the source of truth for published skills; locally installed c
 
 Follow the one-at-a-time ritual: read the local skill in full; flag anything personal or identifying with proposed fixes; agree edits with the user; then publish as a new plugin (folder + plugin.json + marketplace entry + README summary), and remove it from ROADMAP.md if listed there.
 
+## Drafting in Claude Code
+
+Edits to a published skill, and new skills bound for publication, are made in a clone of the repo — never in the synced mirror. To try a draft before publishing, copy it to `~/.claude/skills/<name>/`, and remove that copy once the claude.ai upload has synced back down, or the two will compete. A private skill that will never be published skips the repo: draft it under `~/.claude/skills/<name>/`, zip the folder, and upload the zip to claude.ai.
+
 ## Known limits
 
 - claude.ai has no skills API: uploading to it is always a manual click. This skill minimises drift; it cannot eliminate that step.
+- Claude Code's mirror only flows down from claude.ai. Anything that should reach the desktop app has to go up through a claude.ai upload.
 - In a chat environment the GitHub connector cannot create repositories or write workflow files — those need the GitHub web UI.
